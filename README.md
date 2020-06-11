@@ -19,11 +19,10 @@ To know more about the app and to see the app in action, please visit [Automate 
 5. Doesn't consume your bandwidth, as it resides and uses your Google Acccount Services.
 
 ## Working Example/Demo of the Widget
-<center>
-<iframe src="https://script.google.com/a/technotip.org/macros/s/AKfycbxsyBIbjQpF3yp6PBNcXdVOhDGD3madRKBbqroppQ/exec?slno=6" height="685" width="310" style="border:none;overflow:hidden;" scrolling="no" frameborder="0"></iframe>
-</center>
+We've created 5 widget on this page [Automate Digital Sales using XUMM Payment](https://technotip.com/gifts/automate-digital-sales-using-xumm-payment/), you can visit the link and scroll down to check different use-cases for the app script.
 
 # Installation and Configuration Procedure
+[![Installation Guide](https://i9.ytimg.com/vi/aMnsVneAUsw/maxresdefault.jpg?time=1591866032751&sqp=CJDlh_cF&rs=AOn4CLAMQsumG4HRoWJWFhuryzg1nui90w)](https://www.youtube.com/watch?v=aMnsVneAUsw)
 <iframe width="840" height="473" src="https://www.youtube.com/embed/aMnsVneAUsw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
 
 # Future Updates
