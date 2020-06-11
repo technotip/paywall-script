@@ -22,11 +22,12 @@ To know more about the app and to see the app in action, please visit [Automate 
 We've created 5 widget on this page [Automate Digital Sales using XUMM Payment](https://technotip.com/gifts/automate-digital-sales-using-xumm-payment/), you can visit the link and scroll down to check different use-cases for the app script.
 
 # Installation and Configuration Procedure
-[![Installation Guide](https://i9.ytimg.com/vi/aMnsVneAUsw/maxresdefault.jpg?time=1591866032751&sqp=CJDlh_cF&rs=AOn4CLAMQsumG4HRoWJWFhuryzg1nui90w)](https://www.youtube.com/watch?v=aMnsVneAUsw)
-<iframe width="840" height="473" src="https://www.youtube.com/embed/aMnsVneAUsw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+[![Installation Guide](https://technotip.com/xumm/git/youtube-frame-paywallscript-xumm-api-xrpl.png)](https://www.youtube.com/watch?v=aMnsVneAUsw)
+
 
 # Future Updates
-You can visit our git page any time and update the 2 files, Technotip.com and xumm.
+You can visit our git page any time and check for updates in these 2 files: Code.gs and embed.html.
+We'll keep adding support for more issued currencies, as and when it's available in xumm app.
 
 # Warning
 This is BETA release, so use it at your own discretion.
