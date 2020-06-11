@@ -4,7 +4,7 @@
 This is the repository for PayWall Script: it's a Google App Script App which uses XUMM API to automate the digital sales process.
 
 1. Accepts Crypto Payments.
-2. Sends digital product(s) to the users email ID.
+2. Sends digital product(s) to the users email ID, once the payment is processed.
 3. Logs the sales detail at your end, inside Google SpreadSheet.
 4. Intimates you about the sale via email.
 
