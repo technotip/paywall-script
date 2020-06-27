@@ -179,7 +179,7 @@ function paid(uuid)
            document.getElementById("qr_code").src = domain+"/refresh.png";
            $('#myModal').modal('show');
         }
-        else if(e.uuid == uuid && e.resolved == true && e.signed == true && e.expired  == false && e.cancelled == false)
+        else if(e.uuid == uuid && e.resolved == true && e.signed == true && e.expired  == false && e.cancelled == false && e.dispatched_result == 'tesSUCCESS')
         {
           clearInterval(timer);
           document.getElementById("qr_code").src = domain+"/success.png";
@@ -237,6 +237,26 @@ function sendData(uuid)
   array.push(country.toString());
   array.push(email.toString());
 
+  if(currency == 169)
+   array.push("EUR");
+  else if(currency == 170)
+   array.push("USD");
+  else if(currency == 172)
+   array.push("BTC");   
+  else if(currency == 174)
+   array.push("ETH");   
+  else if(currency == 173)
+   array.push("BCH");      
+  else if(currency == 175)
+   array.push("ETC");      
+  else if(currency == 177)
+   array.push("DASH");      
+  else if(currency == 176)
+   array.push("REP");      
+  else if(currency == 861)
+   array.push("SOLO");      
+  else if(currency == 0)
+   array.push("XRP");         
 
   google.script.run.getData(array, uuid);
   
