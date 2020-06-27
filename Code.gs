@@ -233,6 +233,7 @@ function paid(uuid)
   var result = JSON.parse(UrlFetchApp.fetch(url, options));
   
   result.meta.dispatched_nodetype = result.response.dispatched_nodetype;
+  result.meta.dispatched_result   = result.response.dispatched_result;
   result.meta.amount = result.payload.request_json.Amount;
   result.meta.custom_meta = result.custom_meta.blob;
  
@@ -245,7 +246,7 @@ function getData(data, uuid)
   
   var e = paid(uuid);
   //Check for TESTNET
-  if(e.dispatched_nodetype != "TESTNET" && e.resolved == true && e.signed == true && e.expired  == false && e.cancelled == false)
+  if(e.dispatched_nodetype != "TESTNET" && e.resolved == true && e.signed == true && e.expired  == false && e.cancelled == false && e.dispatched_result == "tesSUCCESS")
   {    
     data.push(e.custom_meta.name);
     data.push(e.custom_meta.xrp);
