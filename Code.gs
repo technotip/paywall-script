@@ -186,11 +186,14 @@ function qr(slno, currency) {
 
    var url  = "https://xumm.app/api/v1/platform/payload"
    
-   
+   var sheet  = getActiveSheet();
+   var target = sheet.getSheetByName("Config");
+  
    var body = {
        "options":
          { "submit":"true","multisign":"false","expire":"1440"},
       "txjson": txjson,
+      "user_token": target.getRange(2, 5).getValue(),
      "custom_meta": { "blob": blob }
     };
   
@@ -207,7 +210,7 @@ function qr(slno, currency) {
   
   var obj = {'price': blob.xrp, qr_code: response.refs.qr_png, 'uuid': response.uuid };
   
-   Logger.log(obj);
+ //  Logger.log(obj);
   
   return obj;
 
