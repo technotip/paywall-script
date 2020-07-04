@@ -123,6 +123,20 @@ function conversion(slno, currency_id)
                 txjson.Amount.currency = my_currency[key].currency;
                 txjson.Amount.issuer   = my_currency[key].issuer;
                 txjson.Amount.value    = ( (my_usd_price / xrp_price("DASH")).toFixed(15) ).toString();           
+        }     
+        else if(my_currency[key].id == 9622)   
+        {
+                txjson.Amount.currency = my_currency[key].currency;
+                txjson.Amount.issuer   = my_currency[key].issuer;      
+          
+                amount = parseInt((my_usd_price / xrp_price("XRP"))); 
+                
+                var price = JSON.parse(UrlFetchApp.fetch("https://data.ripple.com/v2/exchanges/XRP/XTK+rXTKdHWuppSjkbiKoEv53bfxHAn1MxmTb?descending=true&result=tesSUCCESS&limit=1&interval=2hour"));
+                
+                if(price.result == 'success')
+                {
+                  txjson.Amount.value = ( amount * price.exchanges[0].open ).toString();
+                }           
         }      
         else if(my_currency[key].id == currency_id)   
         {
@@ -356,7 +370,7 @@ function currencies()
   
   var response = JSON.parse(UrlFetchApp.fetch(url, params).getContentText());
   
-  /* Towo Labs
+  /* Towo Labs */
   response.details.GateHub.currencies.XTK = {
 "id":9622,
 "issuer_id":2601,
@@ -365,7 +379,7 @@ function currencies()
 "name":"XTK",
 "avatar":"https://xumm.app/assets/icons/currencies/xtk-symbol.png?1"
 };  
-  */
+  
   response.details.GateHub.currencies.SOLO =  {
 "id":861,
 "issuer_id":4380,
