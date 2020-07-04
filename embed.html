@@ -380,7 +380,7 @@ function sendData(uuid)
                 <select class="custom-select mr-sm-2" id="currency" name="currency" required>
                   <option value="" selected>Choose...</option>
                   <option value="0">XRP</option>
-                  <? var options = currencies(); for(var key in options){ if(key != "XAU" && (key == "USD" || key == "BTC" || key == "EUR" || key == "ETH" || key == "BCH" || key == "ETC" || key == "DSH" || key == "REP" || key == "SOLO")) { ?>
+                  <? var options = currencies(); for(var key in options){ if(key != "XAU" && (key == "USD" || key == "BTC" || key == "EUR" || key == "ETH" || key == "BCH" || key == "ETC" || key == "DSH" || key == "REP" || key == "XTK" || key == "SOLO")) { ?>
                   <option value="<?= options[key].id ?>"><?= key ?></option>
                   <? } } ?>
                 </select>          
