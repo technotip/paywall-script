@@ -257,7 +257,9 @@ function sendData(uuid)
    array.push("SOLO");      
   else if(currency == 0)
    array.push("XRP");         
-
+  else if(currency == 9622)
+   array.push("XTK");      
+    
   google.script.run.getData(array, uuid);
   
   }
