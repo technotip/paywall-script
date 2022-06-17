@@ -19,7 +19,10 @@ function html_code()
 
 function xrp_price(ticker)
 {
- 
+    var price = JSON.parse(UrlFetchApp.fetch("https://api.bittrex.com/v3/markets/"+ticker+"-USD/ticker"));
+    return(price.lastTradeRate);
+  
+  /* Deprecated Bittrex API 
   var price = JSON.parse(UrlFetchApp.fetch("https://api.bittrex.com/api/v1.1/public/getticker?market=USD-"+ticker));
   
   if(price.success == true)
@@ -29,6 +32,7 @@ function xrp_price(ticker)
     // Some other exchanges code here and return the value of XRP
     window.stop();
   }
+  */
 }
 
 
